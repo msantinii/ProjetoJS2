@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS EXTERNO-->
     <link rel="stylesheet" href="./src/css/estilo.css">
-    <title>Document</title>
+    <title>Doc</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Meus Projetos</h1>
+        <p>Os melhores projetos Devs</p>
+        <div>
+            <input type="button" class="cor" onclick="trocar('#3AE8B1')">
+            <input type="button" class="cor" onclick="trocar('#c13af2')">
+            <input type="button" class="cor" onclick="trocar('#fbff24')">
+        </div>
+    </header>
+    <main>
+        <buttton onclick="cardProdutos(produtos)">Mostrar Todos (Map)</buttton>
+        <buttton onclick="filtrarPromocoes()">Apenas Promoções (Filter)</buttton>
+        <buttton onclick="calcularTotal()">Calcular Total (Reduce)</buttton>
+
+        <div class="lista-produtos" id="grid"></div>
+        <h2 id="resultado-total"></h2>
+    </main>
+    <footer>
+        <p>&copy;-2026 - Todos os direitos reservador</p>
+    </footer>
     <!--JS EXTERNO-->
     <script src="./src/js/script.js"></script>
 </body>
